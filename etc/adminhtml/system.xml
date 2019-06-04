@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mgs" translate="label" sortOrder="86">
+            <label><![CDATA[Mage Solutions]]></label>
+        </tab>
+        <section id="about_us" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1"> 
+            <label>About Us</label>
+            <tab>mgs</tab>
+            <resource>MGS_Core::config</resource>
+			
+			<group id="about" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="0" showInStore="0">
+				<label>About Us</label>
+				<frontend_model>MGS\Core\Block\Adminhtml\System\About</frontend_model>
+			</group>
+        </section>
+    </system>
+</config>
